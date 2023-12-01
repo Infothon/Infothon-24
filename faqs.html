@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infothon - Frequently Asked Questions</title>
+    <link rel="icon" href="img\logo.png" type="image/icon type">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add Quicksand and Abril Fatface fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Hammersmith+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<style>
+    body {
+        background-color: #160642;
+        color: white;
+        margin: 0;
+        align-items: center;
+        background-size: 50%;
+    }
+
+    .navbar-brand {
+    font-family: 'Abril Fatface', cursive;
+    color: white !important;
+    font-size: 1cm;
+    justify-content: center;
+  }
+
+  #navbarNavDropdown {
+    font-family: 'Quicksand', sans-serif;
+    justify-content: right;
+    margin-right: 0.5cm;
+  }
+  .lo{
+    font-family: 'Abril Fatface', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 1.25cm;
+    justify-content: center;
+    text-align: center;
+  }
+  .navbar {
+  z-index: 10001; /* Set a higher z-index than the cursor container */
+  }
+
+.navbar-toggler {
+  z-index: 10002; /* Set a higher z-index than the cursor container */
+  background-color:#e080f5;
+
+}
+    .accordion-button:not(.collapsed) {
+        background-color: rgba(0, 0, 53, 0.056);
+    }
+
+    .accordion {
+        padding-left: 6cm;
+        padding-right: 6cm;
+        font-family: 'Hammersmith One', sans-serif;
+        
+    }
+
+    .que {
+        font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1.5cm;
+            color: #fff;
+    }
+
+    .accordion-body {
+        color: black !important;
+        font-weight: bolder;
+
+    }
+    @media (max-width: 768px) {
+    .accordion {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    }
+</style>
+
+<body>
+    <!-- Bootstrap Navbar -->
+    	
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+              INFOTHON
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="home.html" style="color: white !important;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="front.html" style="color: white !important;">About us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: white !important;">Register</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery1.html" style="color: white !important;">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sponsors.html" style="color: white !important;">Previous sponsors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faqs.html" style="color: white !important;">FAQ</a>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html" style="color: white !important;">Contact us</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <br><br><br><br><br>
+    <center>
+        <h5 class="que">Frequently Asked Questions</h5>
+    <br><br>
+</center>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+                WHAT IS A HACKATHON?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>A hackathon is where you turn your crazy ideas into real projects. We provide mentors, fun activities, speakers, workshops, food, friends, and so much more. You take care of hacking; we’ll take care of you.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                WHAT CAN I BUILD?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>We have given a certain problem statement for you.You can use that and create a solution or you can make any projects on our three main domain.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                I DON'T LIVE IN MYSORE. CAN I STILL ATTEND?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Yes! If you're selected. You can attend the hackathon. Accommodation will be provided on request with nominal charges.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                HOW IS INFOTHON DIFFERENT?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>We have exclusive swags and goodies to give away for everyone and We got some sponsorship from the company where you can get internship opportunities based on your project!!</p>
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                WHO CAN ATTEND?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>You are eligible to attend if you're atleast 18 and a student (BE/Diploma/BCA/MCA) or you graduated within 1 year.</p>
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                IS THIS HACKATHON ONLINE OR OFFLINE?             
+            </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>yes!, It will be an offline event.</p>
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                WHAT IS TEAM STRUCTURE?             
+            </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Minimum of two to maximum of four in a team.</p>
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+                WILL THERE BE AN INTERNET ACCESS?
+            </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Yes, wireless internet access will be provided.</p>
+            </div>
+            </div>
+          </div>
+      </div><br><br>
+      <footer class="text-center p-4 bg-dark text-white" style="font-family: 'Quicksand', sans-serif; background-color: #060e27 !important;">
+        <div class="container">
+            <!-- Logo and Text -->
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+                    <h3 class="navbar-brand mb-0">INFOTHON</h3>
+                </div>
+            </div>
+    <!-- Social Media Icons -->
+    <center>
+        <div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <a href="https://instagram.com/infothon.vvce?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="text-white me-4"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.facebook.com/Infothon.2023?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="text-white me-4"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://x.com/InfothonIse?t=0xyudAwBVaUESRyejBsgPA&s=09" target="_blank" class="text-white"><img src="x-twitter (1).svg" alt="" style="width: 2em; height: 2em; margin-right: 14px;"></a>
+            </div><br>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <a href="mailto:infothon.vvce.in" class="text-white"><i class="far fa-envelope me-2"></i>infothon@vvce.ac.in</a>
+            </div>
+    
+            
+        </div>
+    </center>
+    
+            <!-- Useful Links -->
+            <div class="row mt-4">
+                <div class="col">
+                    <h5 class="mb-3" style="font-weight: bolder;">Useful Links</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="home.html" class="text-white">Home</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Register</a></li>
+                        <li class="list-inline-item"><a href="faqs.html" class="text-white">FAQs</a></li>
+                        <li class="list-inline-item"><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li class="list-inline-item"><a href="front.html" class="text-white">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="row mt-3">
+                <div class="col">
+                    <p class="mb-0">Copyright © INFOTHON 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

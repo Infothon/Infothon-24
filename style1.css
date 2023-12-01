@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  html,
+  body {
+	height: 100%;
+  }
+  
+  body {
+	background: black;
+	margin: 0;
+	font-family: 'Abril Fatface', cursive;
+	overflow: visible;
+  }
+  
+  .cover {
+	height: 100vh; /* or auto or unset */
+	overflow: hidden;
+	transition: 1s filter ease;
+  }
+  
+  #particles1 {
+	background:#160642;
+	height: 100%;
+	position: absolute; /* Change to absolute positioning */
+	top: 0; /* Position particles container at the top */
+	width: 100%;
+  }
+  
+  /* Your other styles remain unchanged */
+  
+  /* Mobile-specific styles using a media query */
+  @media screen and (max-width: 600px) {
+	/* Adjust other styles as needed for mobile devices */
+	.navbar-brand {
+	  font-size: 0.8em;
+	}
+  
+	.navbar-nav {
+	  text-align: center;
+	}
+  
+	/* Add more mobile-specific styles as needed */
+  }
+  
