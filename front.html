@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFOTHON - About us</title>
+    <title>Infothon - About us</title>
     <link rel="icon" href="img\logo.png" type="image/icon type">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,47 +13,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Hammersmith+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fontawesome.com">
 
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            align-items: center;
-        }
-        .navbar-brand {
-            font-family: 'Abril Fatface', cursive;
-            color: white !important;
-            font-size: 1cm;
-            justify-content: center;
-            }
-
-        #navbarNavDropdown {
-            font-family: 'Quicksand', sans-serif;
-            justify-content: right;
-            margin-right: 0.5cm;
-        }
-        .lo{
-            font-family: 'Abril Fatface', cursive;
-            color: rgb(255, 255, 255);
-            font-size: 1.25cm;
-            justify-content: center;
-            text-align: center;
-        }
-        .navbar {
-    z-index: 10001;
-    max-width: 100%; /* Add this line to limit the maximum width */
-    margin: 0 auto; /* Center the navbar */
-}
+    body {
+        background-color: #160642;
+        color: white;
+        align-items: center;
+        background-size: 50%;
+        margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    }
+    .navbar-brand {
+    font-family: 'Abril Fatface', cursive;
+    color: white !important;
+    font-size: 1cm;
+    justify-content: center;
+  }
+  #navbarNavDropdown {
+    font-family: 'Quicksand', sans-serif;
+    justify-content: right;
+    margin-right: 0.5cm;
+  }
+  .lo{
+    font-family: 'Abril Fatface', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 1.25cm;
+    justify-content: center;
+    text-align: center;
+  }
+  .navbar {
+  z-index: 10001; /* Set a higher z-index than the cursor container */
+  }
 
 .navbar-toggler {
-    z-index: 10002;
-    background-color: #e080f5;
-}
+  z-index: 10002; /* Set a higher z-index than the cursor container */
+  background-color:#e080f5;
 
-        .carousel {
+}
+.carousel {
             position: absolute;
             top: 0;
             left: 0;
@@ -85,7 +90,7 @@
         }
 
         .image {
-            padding-right: 3.4cm;
+            margin-right: 3.4cm;
             margin-bottom: 0;
             padding-top: 0.5cm;
             /* Corrected spelling here */
@@ -112,29 +117,32 @@
 
         @media (max-width: 768px) {
 
-          .carousel {
-            padding-top: 2cm;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 35vh;
-            z-index: -1;
-            overflow: hidden;
+            .carousel {
+            display: none;
         }
 
-        .carousel-item {
-            position: relative;
+        .con {
+            text-align: center;
+            background-image: url('img\glimpse\2.JPG'); /* Replace 'your-image-path.jpg' with the path to your background image */
+            background-size: cover;
+            background-position: center;
+            padding: 50px; /* Adjust padding as needed for better visual */
         }
 
-        .carousel img {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
+        .content {
+            text-align: center;
+            padding: 20px;
         }
-        .sp img{
-            height: 1cm !important;
-            width: 4cm;
+
+        .image {
+            text-align: center;
+            padding-top: 0.5cm;
+            margin-right: 0;
+        }
+
+        #cr1,
+        #cr2 {
+            text-align: center;
         }
             .con {
                 flex-direction: column-reverse;
@@ -170,11 +178,21 @@
             #cr2 {
                 color: darkgray !important;
             }
-            .spo img{
-              margin: 0.75cm; /* Spacing between images */
-              height: 2cm; /* Set a fixed height for sponsor images */
-              width: 5cm;
-            }
+            .spo img {
+            margin: 4% !important;
+            height: 20% !important;
+            width: 80% !important;
+        }
+
+        .pre {
+            padding-top: 2cm;
+            font-size: 0.8cm; /* Adjust font size for better mobile display */
+        }
+
+        .sponsors {
+            padding: 5%; /* Adjust padding for better mobile display */
+        }
+
             .info{
                 padding-left: 5% !important;
                 padding-right: 5% !important;
@@ -245,13 +263,14 @@
             justify-content: center;
             text-align: center;
         }
-        .info{
-            background-color:rgb(73, 61, 107);
-            padding-left: 3cm;
-            padding-right: 3cm;
-            padding-top: 3cm;
-            padding-bottom: 3cm;
-        }
+        .info {
+    background-color: rgb(73, 61, 107);
+    padding-left: 1cm; /* Adjust the left padding */
+    padding-right: 1cm; /* Adjust the right padding */
+    padding-top: 3cm;
+    padding-bottom: 3cm;
+}
+
         #ab{
             font-family: 'Quicksand', sans-serif;
             text-align: center;
@@ -279,61 +298,58 @@
     margin-right: 0.5cm;
 }
 .container-fluid {
-    padding: 0; /* Remove default padding */
+    max-width: 100%; /* Adjust the maximum width as needed */
+    padding: 0 !important; /* Remove default padding */
 }
 .container {
-    padding: 0; /* Remove default padding */
+    max-width: 100%; /* Adjust the maximum width as needed */
+    padding: 0 !important; /* Remove default padding */
 }
 
 
-
-    </style>
-</head>
+</style>
 
 <body>
-
     <!-- Bootstrap Navbar -->
-     	
+    	
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgba(0, 0, 0, 0.5) !important;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
-                INFOTHON
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="home.html" style="color: white !important;">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="front.html" style="color: white !important;">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: white !important;">Register</a>
-                    </li>
-      
-                    <li class="nav-item">
-                      <a class="nav-link" href="gallery1.html" style="color: white !important;">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="sponsors.html" style="color: white !important;">Previous sponsors</a>
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+              INFOTHON
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="home.html" style="color: white !important;">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="faqs.html" style="color: white !important;">FAQ</a>
+                    <a class="nav-link" href="front.html" style="color: white !important;">About us</a>
                   </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html" style="color: white !important;">Contact us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </nav>
-
-    <!-- Bootstrap Carousel -->
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: white !important;">Register</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery1.html" style="color: white !important;">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sponsors.html" style="color: white !important;">Previous sponsors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faqs.html" style="color: white !important;">FAQ</a>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html" style="color: white !important;">Contact us</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -492,12 +508,12 @@
         </div>
         <br>
         <h5 class="pre">- Gold -</h5>
-        <div class="sp">
+        <div >
             <a href="https://devfolio.co" target="_blank"><img src="img\devfolio.png" alt=""></a>
             <a href="https://polygon.technology" target="_blank"><img src="img\polygon.png" alt=""></a>
         </div>
         <h5 class="pre">- Silver -</h5>
-        <div class="sp">
+        <div >
           <a href="https://filecoin.io" target="_blank"><img src="img\filecoin.png" alt=""></a>
           <a href="https://solana.com" target="_blank"><img src="img\solana.png" alt=""></a>
           <a href="https://replit.com" target="_blank"><img src="img\replit.png" alt=""></a>
@@ -509,50 +525,54 @@
 
         </div>
     </div>
-
-<footer class="text-center p-4 bg-dark text-white" style="font-family: 'Quicksand', sans-serif; background-color: #060e27 !important;">
-    <div class="container">
-        <!-- Logo and Text -->
-        <div class="row mb-4">
-            <div class="col-md-12">
-                <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
-                <h3 class="navbar-brand mb-0">INFOTHON</h3>
+    <footer class="text-center p-4 bg-dark text-white" style="font-family: 'Quicksand', sans-serif; background-color: #060e27 !important;">
+        <div class="container">
+            <!-- Logo and Text -->
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+                    <h3 class="navbar-brand mb-0">INFOTHON</h3>
+                </div>
+            </div>
+      <!-- Social Media Icons -->
+      <center>
+        <div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <a href="https://instagram.com/infothon.vvce?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="text-white me-4"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.facebook.com/Infothon.2023?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="text-white me-4"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://x.com/InfothonIse?t=0xyudAwBVaUESRyejBsgPA&s=09" target="_blank" class="text-white"><img src="x-twitter (1).svg" alt="" style="width: 2em; height: 2em; margin-right: 14px;"></a>
+            </div><br>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <a href="mailto:infothon.vvce.in" class="text-white"><i class="far fa-envelope me-2"></i>infothon@vvce.ac.in</a>
+            </div>
+      
+            
+        </div>
+      </center>
+      
+            <!-- Useful Links -->
+            <div class="row mt-4">
+                <div class="col">
+                    <h5 class="mb-3" style="font-weight: bolder;">Useful Links</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="home.html" class="text-white">Home</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Register</a></li>
+                        <li class="list-inline-item"><a href="faqs.html" class="text-white">FAQs</a></li>
+                        <li class="list-inline-item"><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li class="list-inline-item"><a href="front.html" class="text-white">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="row mt-3">
+                <div class="col">
+                    <p class="mb-0">Copyright © INFOTHON 2024</p>
+                </div>
             </div>
         </div>
-<!-- Social Media Icons -->
-<center>
-    <div>
-        <div class="col-md-6 d-flex align-items-center justify-content-center">
-            <a href="https://instagram.com/infothon.vvce?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="text-white me-4"><i class="fab fa-instagram fa-2x"></i></a>
-            <a href="https://www.facebook.com/Infothon.2023?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="text-white me-4"><i class="fab fa-facebook-f fa-2x"></i></a>
-            <a href="https://x.com/InfothonIse?t=0xyudAwBVaUESRyejBsgPA&s=09" target="_blank" class="text-white"><img src="x-twitter (1).svg" alt="" style="width: 2em; height: 2em; margin-right: 14px;"></a>
-        </div><br>
-        <div class="col-md-6 d-flex align-items-center justify-content-center">
-            <a href="mailto:infothon.vvce.in" class="text-white"><i class="far fa-envelope me-2"></i>infothon@vvce.ac.in</a>
-        </div>
-
+      </footer>
         
-    </div>
-</center>
-        <div class="row mt-4">
-            <div class="col">
-                <h5 class="mb-3" style="font-weight: bolder;">Useful Links</h5>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="home.html" class="text-white">Home</a></li>
-                    <li class="list-inline-item"><a href="#" class="text-white">Register</a></li>
-                    <li class="list-inline-item"><a href="faqs.html" class="text-white">FAQs</a></li>
-                    <li class="list-inline-item"><a href="contact.html" class="text-white">Contact Us</a></li>
-                    <li class="list-inline-item"><a href="front.html" class="text-white">About Us</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- Copyright -->
-        <div class="row mt-3">
-            <div class="col">
-                <p class="mb-0">Copyright © INFOTHON 2024</p>
-            </div>
-        </div>
-    </div>
-</footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
