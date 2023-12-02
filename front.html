@@ -116,7 +116,21 @@
         }
 
         @media (max-width: 768px) {
+            .navbar-collapse {
+        text-align: center;
+    }
 
+    .navbar-nav {
+        margin: 0;
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        display: block;
+        margin-bottom: 10px; /* Adjust as needed for spacing between items */
+    }
             .carousel {
             display: none;
         }
@@ -193,10 +207,10 @@
             padding: 5%; /* Adjust padding for better mobile display */
         }
 
-            .info{
-                padding-left: 5% !important;
-                padding-right: 5% !important;
-            }
+        .info {
+        padding-left: 0;
+        padding-right: 0;
+    }
             
         }
 
@@ -436,7 +450,10 @@
         </div>
     </div>
     <!-- Add Bootstrap JavaScript and Popper.js dependencies here -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Add Bootstrap JavaScript and Popper.js dependencies here -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
     <br><br>
     <h5 class="org">Organized by</h5>
@@ -519,7 +536,7 @@
           <a href="https://replit.com" target="_blank"><img src="img\replit.png" alt=""></a>
         </div>
         <h5 class="pre">- Bronze -</h5>
-        <div >
+        <div class>
           <a href="https://www.ieindia.org/webui/iei-home.aspx" target="_blank"><img src="img\IEI.png" alt="" style="border-radius: 0.3cm;"></a>
           <a href="http://www.isteonline.in" target="_blank"><img src="img\iste.jpg" alt="" style="border-radius: 0.3cm;"></a>
 
@@ -571,8 +588,5 @@
             </div>
         </div>
       </footer>
-        
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
