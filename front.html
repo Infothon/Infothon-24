@@ -21,6 +21,7 @@
     <style>
         body {
             margin: 0;
+            padding: 0;
             align-items: center;
         }
         .navbar-brand {
@@ -43,14 +44,16 @@
             text-align: center;
         }
         .navbar {
-        z-index: 10001; /* Set a higher z-index than the cursor container */
-        }
+    z-index: 10001;
+    max-width: 100%; /* Add this line to limit the maximum width */
+    margin: 0 auto; /* Center the navbar */
+}
 
-        .navbar-toggler {
-        z-index: 10002; /* Set a higher z-index than the cursor container */
-        background-color:#e080f5;
+.navbar-toggler {
+    z-index: 10002;
+    background-color: #e080f5;
+}
 
-        }
         .carousel {
             position: absolute;
             top: 0;
@@ -60,7 +63,7 @@
             z-index: -1;
             overflow: hidden;
         }
-
+        
         .carousel-item {
             position: relative;
         }
@@ -129,6 +132,10 @@
             height: 100%;
             width: 100%;
         }
+        .sp img{
+            height: 1cm !important;
+            width: 4cm;
+        }
             .con {
                 flex-direction: column-reverse;
             }
@@ -136,7 +143,7 @@
             .image {
                 text-align: center;
                 padding-top: 0.5cm;
-                padding-right: 0cm;
+                padding-right: 0%;
             }
 
             .image img {
@@ -164,14 +171,13 @@
                 color: darkgray !important;
             }
             .spo img{
-
               margin: 0.75cm; /* Spacing between images */
-              height: 2.5cm; /* Set a fixed height for sponsor images */
-              width: 7cm;
+              height: 2cm; /* Set a fixed height for sponsor images */
+              width: 5cm;
             }
             .info{
-                padding-left: 1cm !important;
-                padding-right: 1cm !important;
+                padding-left: 5% !important;
+                padding-right: 5% !important;
             }
             
         }
@@ -272,6 +278,13 @@
     margin-left: 0.5cm;
     margin-right: 0.5cm;
 }
+.container-fluid {
+    padding: 0; /* Remove default padding */
+}
+.container {
+    padding: 0; /* Remove default padding */
+}
+
 
 
     </style>
@@ -479,12 +492,12 @@
         </div>
         <br>
         <h5 class="pre">- Gold -</h5>
-        <div>
+        <div class="sp">
             <a href="https://devfolio.co" target="_blank"><img src="img\devfolio.png" alt=""></a>
             <a href="https://polygon.technology" target="_blank"><img src="img\polygon.png" alt=""></a>
         </div>
         <h5 class="pre">- Silver -</h5>
-        <div>
+        <div class="sp">
           <a href="https://filecoin.io" target="_blank"><img src="img\filecoin.png" alt=""></a>
           <a href="https://solana.com" target="_blank"><img src="img\solana.png" alt=""></a>
           <a href="https://replit.com" target="_blank"><img src="img\replit.png" alt=""></a>
