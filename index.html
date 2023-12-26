@@ -334,3 +334,30 @@ body .modal-content {
 <script src="script1.js" defer></script>
 </body>
 </html>
+<script>
+  <!-- Add this script in the head section or before the closing body tag -->
+  // JavaScript function to close the toast
+  function closeToast(toastId) {
+    document.getElementById(toastId).classList.remove('show');
+  }
+
+  // Function to show the toast
+  function showToast(toastId, delay) {
+    setTimeout(function() {
+      document.getElementById(toastId).classList.add('show');
+    }, delay);
+  }
+
+  // Show toasts after a delay
+  if (window.innerWidth > 767) {
+      showToast('notification-toast', 4000); // Problem statements
+      showToast('domains-toast', 2000); // Domains
+      showToast('event-flow-toast', 6000); // Event flow
+    }
+  $(document).ready(function () {
+      // Show modal when the notification icon is clicked
+      $("#notification-icon").click(function () {
+          $("#notificationModal").modal("show");
+      });
+  });
+</script>
