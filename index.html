@@ -106,8 +106,20 @@
     text-decoration: none;
     color: rgb(0, 176, 199);
   }
+      @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
   .notification-icon {
     position: fixed;
+    animation: bounce 2s infinite;
     bottom: 23px;
     right: 20px;
     background-color: #e080f5;
@@ -261,7 +273,7 @@ body .modal-content {
   </div>
 </div>
 <div id="notification-icon" class="notification-icon">
-  <img src="not.gif" alt="Notification Icon" style="width: 2cm; height: 2cm;"></div>
+  <img src="not.gif" alt="Notification Icon" style="width: 1.5cm; height: 1.5cm;"></div>
 </div>
 <!-- Notification Modal -->
 <div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="notificationModalLabel" aria-hidden="true">
