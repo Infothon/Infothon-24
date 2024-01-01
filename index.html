@@ -191,6 +191,37 @@ body .modal-content {
     font-size: 0.3cm;
   }
 }
+    #problem-statements-icon {
+  position: fixed;
+    animation: bounce 2s infinite;
+    margin-bottom: 110px;
+    right: 20px;
+    background-color: #e080f5;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10003;
+}
+
+#problem-statements-icon i {
+  font-size: 20px;
+  margin: 5%;
+}
+.attention-arrow {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  margin-left: -9px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent; /* Adjust the size of the arrow */
+  border-right: 9px solid transparent; /* Adjust the size of the arrow */
+  border-bottom: 12px solid rgb(255, 255, 255); /* Adjust the color and size of the arrow */
+  border-radius: 50%; /* Add this to make both ends curved */
+  animation: bounce 2s infinite;
+}
+
   </style>
   <body>
 <!-- partial:index.partial.html -->
@@ -212,13 +243,13 @@ body .modal-content {
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html" style="color: white !important;">Home</a>
                 </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://drive.google.com/drive/folders/1IdZgow-woI83Ba-vAqHYIs9Y_8oD5Qqe?usp=drive_link" target="_blank" style="color: white !important;">Problem Statements</a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="front.html" style="color: white !important;">About us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://unstop.com/p/infothon-20-vidyavardhaka-college-of-engineering-mysore-850602" style="color: white !important;">Register</a>
-                </li>
-  
+ 
                 <li class="nav-item">
                   <a class="nav-link" href="gallery1.html" style="color: white !important;">Gallery</a>
                 </li>
@@ -275,7 +306,19 @@ body .modal-content {
     </p>
   </div>
 </div>
+<div  class="notification-icon" style="position: fixed; bottom: 212px !important; right: 20px; color: white; text-align: center; font-family: 'Quicksand', sans-serif;">
+  <p style="font-size: 0.3cm; margin: 0;"> Problem </p>
+  <p style="font-size: 0.3cm; margin: 0;">Statements</p>
+</div>
+<a href="https://drive.google.com/drive/folders/1IdZgow-woI83Ba-vAqHYIs9Y_8oD5Qqe?usp=drive_link" target="_blank" id="problem-statements-icon" class="notification-icon">
+  <div class="attention-arrow"></div>
+  <i class="fas fa-book"></i>
+</a>
+<div  class="notification-icon" style="position: fixed; bottom: 100px !important; right: 27px; color: white; text-align: center; font-family: 'Quicksand', sans-serif; background-color: ;">
+  <p style="font-size: 0.3cm; margin: 0;">Updates</p>
+</div>
 <div id="notification-icon" class="notification-icon">
+  <div class="attention-arrow"></div>
   <img src="not.gif" alt="Notification Icon" style="width: 1.5cm; height: 1.5cm;"></div>
 </div>
 <!-- Notification Modal -->
