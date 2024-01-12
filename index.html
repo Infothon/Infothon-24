@@ -223,7 +223,13 @@ body .modal-content {
   border-radius: 50%; /* Add this to make both ends curved */
   animation: bounce 2s infinite;
 }
-
+  #timer-container {
+      font-family: 'Quicksand', sans-serif;
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: 1em;
+      color: white;
+    }
   </style>
   <body>
 <!-- partial:index.partial.html -->
@@ -275,7 +281,7 @@ body .modal-content {
   <img src="img/logo.png" class="cursor-image">
   <div class="text-container">
         <h5 id="cr2">National level Hackathon</h5>
-        <a href="https://unstop.com/p/infothon-20-vidyavardhaka-college-of-engineering-mysore-850602"><button type="button" class="btn btn-outline-info" style="width: 8cm; height: 1.5cm; padding-top: 0.1cm; font-family: 'Quicksand', sans-serif; font-size: larger;">Presentation Round</button></a>
+        <div id="timer-container"></div>
         <br><br><h5 id="cr2">Date : 20th - 21th January 2024</h5>
         <p id="cr2" style="font-weight: bold;">Event flow : <a id="cr2" style="font-size: 0.4cm;" target="_blank" href="https://drive.google.com/file/d/11IgAiiazKfI-iafOnS8DtORNp2_qPQET/view?usp=sharing" class="click">Click here</a></p>
   </div>
@@ -433,3 +439,45 @@ body .modal-content {
       });
   });
 </script>
+  <script>
+    
+  // Function to start the countdown timer
+  function startCountdown(targetDate, display) {
+    function updateTimer() {
+      var now = new Date().getTime();
+      var timeRemaining = targetDate - now;
+
+      if (timeRemaining < 0) {
+        clearInterval(timerInterval); // Stop the timer if it's negative
+        display.textContent = "Expired";
+        return;
+      }
+
+      var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+      days = days < 10 ? "0" + days : days;
+      hours = hours < 10 ? "0" + hours : hours;
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.textContent = days + " days : " + hours + " hours : " + minutes + " min : " + seconds + " sec";
+    }
+
+    updateTimer(); // Initial call to display timer immediately
+
+    var timerInterval = setInterval(updateTimer, 1000); // Update timer every second
+  }
+
+  // Execute the countdown timer when the window is loaded
+  window.onload = function () {
+    // Set the target date and time (January 20, 2024, at 8:00 AM)
+    var targetDate = new Date("January 20, 2024 08:00:00").getTime();
+    var display = document.getElementById('timer-container'); // Get the HTML element where you want to display the timer
+
+    startCountdown(targetDate, display);
+  };
+  </script>
+  
