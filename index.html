@@ -281,10 +281,10 @@ body .modal-content {
   <div class="text-container">
         <h5 id="cr2" style="font-size: 0.3cm; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; color:rgb(22, 196, 219);">Passion-fueled Creativity, Purpose-driven Innovation</h5>
         <h5 id="cr2">National level Hackathon</h5>
-<a target="_blank" href="https://drive.google.com/file/d/11IgAiiazKfI-iafOnS8DtORNp2_qPQET/view?usp=sharing"><button type="button" class="btn btn-outline-info"
-                    style="width: 8cm; height: 1.5cm; padding-top: 0.1cm; font-family: 'Quiksand',sans-serif; font-size: larger;" on><div id="timer-container"></div>
+<a target="_blank" href="https://unstop.com/hackathons/infothon-20-vidyavardhaka-college-of-engineering-mysore-850602"><button type="button" class="btn btn-outline-info"
+                    style="width: 8cm; height: 1.5cm; padding-top: 0.1cm; font-family: 'Quiksand',sans-serif; font-size: larger;">Upload the Project here</div>
                   </button></a>
-        <br><br><h5 id="cr2">Date : 20th - 21th January 2024</h5>
+        <br><h5 id="cr2">Date : 20th - 21th January 2024</h5>
         <p id="cr2" style="font-weight: bold;">Event flow : <a id="cr2" style="font-size: 0.4cm;" target="_blank" href="https://drive.google.com/file/d/11IgAiiazKfI-iafOnS8DtORNp2_qPQET/view?usp=sharing" class="click">Click here</a></p>
   </div>
 </div>
@@ -437,45 +437,4 @@ body .modal-content {
       });
   });
 </script>
-  <script>
-    
-  // Function to start the countdown timer
-  function startCountdown(targetDate, display) {
-    function updateTimer() {
-      var now = new Date().getTime();
-      var timeRemaining = targetDate - now;
-
-      if (timeRemaining < 0) {
-        clearInterval(timerInterval); // Stop the timer if it's negative
-        display.textContent = "Expired";
-        return;
-      }
-
-      var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-      days = days < 10 ? "0" + days : days;
-      hours = hours < 10 ? "0" + hours : hours;
-      minutes = minutes < 10 ? "0" + minutes : minutes;
-      seconds = seconds < 10 ? "0" + seconds : seconds;
-
-      display.textContent = days + " days : " + hours + " hours : " + minutes + " min : " + seconds + " sec";
-    }
-
-    updateTimer(); // Initial call to display timer immediately
-
-    var timerInterval = setInterval(updateTimer, 1000); // Update timer every second
-  }
-
-  // Execute the countdown timer when the window is loaded
-  window.onload = function () {
-    // Set the target date and time (January 20, 2024, at 8:00 AM)
-    var targetDate = new Date("January 20, 2024 08:00:00").getTime();
-    var display = document.getElementById('timer-container'); // Get the HTML element where you want to display the timer
-
-    startCountdown(targetDate, display);
-  };
-  </script>
   
