@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infothon 3.0</title>
+    <link rel="icon" href="img\logo.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add Quicksand and Abril Fatface fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Hammersmith+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: #376e8ffa;
+        color: white;
+        align-items: center;
+        background-size: 50%;
+        margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    }
+    .navbar-brand {
+    font-family: 'Abril Fatface', cursive;
+    color: white !important;
+    font-size: 1cm;
+    justify-content: center;
+  }
+  #navbarNavDropdown {
+    font-family: 'Quicksand', sans-serif;
+    justify-content: right;
+    margin-right: 0.5cm;
+  }
+  .lo{
+    font-family: 'Abril Fatface', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 1.25cm;
+    justify-content: center;
+    text-align: center;
+  }
+  .navbar {
+  z-index: 10001; /* Set a higher z-index than the cursor container */
+  }
+
+.navbar-toggler {
+  z-index: 10002; /* Set a higher z-index than the cursor container */
+  background-color:#e080f5;
+
+}
+.carousel {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80vh;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .carousel-item {
+            position: relative;
+        }
+
+        .carousel img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .carousel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .image {
+            margin-right: 3.4cm;
+            margin-bottom: 0;
+            padding-top: 0.5cm;
+            /* Corrected spelling here */
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .card {
+            margin-bottom: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .con {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        margin: 0;
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        display: block;
+        margin-bottom: 10px; /* Adjust as needed for spacing between items */
+    }
+            .carousel {
+            display: none;
+        }
+
+        .con {
+            text-align: center;
+            background-image: url('img\glimpse\2.JPG'); /* Replace 'your-image-path.jpg' with the path to your background image */
+            background-size: cover;
+            background-position: center;
+            padding: 50px; /* Adjust padding as needed for better visual */
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image {
+            text-align: center;
+            padding-top: 0.5cm;
+            margin-right: 0;
+        }
+
+        #cr1,
+        #cr2 {
+            text-align: center;
+        }
+            .con {
+                flex-direction: column-reverse;
+            }
+
+            .image {
+                text-align: center;
+                padding-top: 0.5cm;
+                padding-right: 0%;
+            }
+
+            .image img {
+                text-align: center;
+                max-width: 100%;
+                height: auto;
+                max-height: 3cm;
+                max-width: 3cm;
+            }
+
+            .content {
+                width: 100%;
+                text-align: center;
+            }
+
+            .card {
+                margin: 10px auto;
+            }
+
+            #cr1 {
+                color: darkgray !important;
+            }
+
+            #cr2 {
+                color: darkgray !important;
+            }
+            .spo img {
+            margin: 4% !important;
+            height: 20% !important;
+            width: 80% !important;
+        }
+
+        .pre {
+            padding-top: 2cm;
+            font-size: 0.8cm; /* Adjust font size for better mobile display */
+        }
+
+        .sponsors {
+            padding: 5%; /* Adjust padding for better mobile display */
+        }
+
+        .info {
+        padding-left: 0;
+        padding-right: 0;
+    }
+            
+        }
+
+        #cr1 {
+            font-family: 'Abril Fatface', cursive;
+            color: white;
+            font-size: 1.25cm;
+            justify-content: center;
+        }
+
+        #cr2 {
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+        }
+
+        .organizer {
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .organizer .row-cols-md-3 {
+            justify-content: center;
+        }
+
+        .organizer .card {
+            max-width: 400px;
+            max-height: 500px;
+            margin: 0.15 0.15cm;
+            /* Adjust this value as needed */
+            display: inline-block;
+        }
+
+        .org {
+          font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1cm;
+        }
+        .pre{
+          font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1cm;
+            color: #fff;
+        }
+        .sponsors {
+            background-color: #376e8ffa; /* Dark background color */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .sponsors img {
+          margin: 0.75cm; /* Spacing between images */
+          height: 3cm; /* Set a fixed height for sponsor images */
+        }
+        .about{
+            font-family: 'Abril Fatface', cursive;
+            color: #1a1a1a;
+            font-size: 1.25cm;
+            justify-content: center;
+            text-align: center;
+        }
+        .info {
+    background-color: rgb(57, 83, 95);
+    padding-left: 1cm; /* Adjust the left padding */
+    padding-right: 1cm; /* Adjust the right padding */
+    padding-top: 3cm;
+    padding-bottom: 3cm;
+}
+
+        #ab{
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            font-size: 0.4cm;
+            font-weight: 500;
+            color: aliceblue;
+        }
+        .stats{
+            background-color: rgb(255, 255, 255);
+            padding-top: 1cm;
+            padding-bottom: 1cm;
+            color: black;
+            
+        }
+        .stats .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats img {
+    height: 4cm;
+    width: 4cm;
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
+}
+.container-fluid {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    padding: 0 !important; /* Remove default padding */
+}
+.container {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    padding: 0 !important; /* Remove default padding */
+}
+
+
+</style>
+
+<body>
+    <!-- Bootstrap Navbar -->
+    	
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+              INFOTHON
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html" style="color: white !important;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="front.html" style="color: white !important;">About us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://unstop.com/p/infothon-20-vidyavardhaka-college-of-engineering-mysore-850602" style="color: white !important;">Register</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html" style="color: white !important;">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sponsors.html" style="color: white !important;">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faqs.html" style="color: white !important;">FAQ</a>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html" style="color: white !important;">Contact us</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <!-- Content on top of the carousel -->
+    <div class="con">
+        <div class="content">
+            <br><br><br>
+            <div class="row">
+                <div class="card mb-3" style="max-width: 350px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img\card11.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Gain access to new ideas and innovation.</h5>
+                                <p class="card-text">Expand your community and discover career opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 350px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img\card2.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Learn new technical skills.</h5>
+                                <p class="card-text">Learn interpersonal and teamwork skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 350px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img/card3.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Problem Solving</h5>
+                                <p class="card-text">Intellectually stimulating and can lead to the development of creative
+                                    and effective solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 350px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img/card4.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Networking</h5>
+                                <p class="card-text">Chance to network with like-minded people, industry
+                                    professionals, and potential employers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <br><br><br>
+            <center>
+                <img src="img/logo.png" alt="" style="height: 7cm; width: 7cm;">
+                <h5 id="cr1">INFOTHON 3.0</h5>
+                <h5 id="cr2">24 hrs National Level Hackathon</h5>
+                <a href="https://unstop.com/p/infothon-20-vidyavardhaka-college-of-engineering-mysore-850602"><button type="button" class="btn btn-outline-info" style="width: 8cm; height: 1.5cm; padding-top: 0.1cm; font-family: 'Quicksand', sans-serif; font-size: larger;">Register Now</button></a>
+
+            </center>
+        </div>
+    </div>
+    <!-- Add Bootstrap JavaScript and Popper.js dependencies here -->
+<!-- Add Bootstrap JavaScript and Popper.js dependencies here -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <br><br>
+    <h5 class="org">Organized by</h5>
+    <!-- Background content -->
+    <div class="organizer">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img\VVCE.png" class="card-img-top" alt="..." style="height: 4cm; width: 4cm; margin-top: 0.1cm; margin-left: 0.2cm;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 0.4cm;">VIDYAVARDHAKA COLLEGE OF ENGINEERING</h5>
+                        <small class="text-body-secondary">VVCE Website : <a href="https://vvce.ac.in"> click here </a></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img\ISE.png" class="card-img-top" alt="..." style="height: 4cm; width: 4cm; margin-top: 0.1cm; margin-left: 0.2cm;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 0.4cm;">DEPARTMENT OF INFORMATION SCIENCE & ENGINEERING</h5>
+                        <small class="text-body-secondary" style="font-size: small;">ISE Website : <a
+                                href="https://vvce.ac.in/department/information-science-engineering/"> click here </a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <h5 class="about" style="color: #fff;">INFOTHON 3.0</h5><br>
+        <p id="ab">Welcome to Infothon 2024, the ultimate offline hackathon hosted by the Information Science and Engineering Department of VVCE Mysore! Infothon 2024 is an exhilarating 24-hour coding extravaganza that brings together passionate innovators, programmers, and problem solvers from all walks of life. Held at the prestigious VVCE campus in Mysore, this hackathon is designed to ignite creativity, foster collaboration, and push the boundaries of technological innovation. Join us at Infothon 2024, where creativity, collaboration, and coding excellence come together to shape the future. Get ready to embark on an unforgettable hackathon experience that will challenge, inspire, and empower you to create something extraordinary. Let's code for a brighter tomorrow!</p>
+    </div>
+    <div class="stats">
+        <div class="row">
+            <br>
+            <center>
+            <h1>Previous Year Stats</h1>
+        </center>
+        <br>
+            <div class="col-sm-4">
+                <center>
+                <img src="img/monitoring.png">
+                <h3>220+ Participants</h3>
+                <br>
+            </center>
+            </div>
+            <div class="col-sm-4">
+                <center>
+                <img src="img/team-management.png">
+                <h3>55+ Teams</h3>
+                <br>
+            </center>
+            </div>
+            <div class="col-sm-4">
+                <center>
+                <img src="img/university.png">
+                <h3>15+ Institutions</h3>
+                <br>
+            </center>
+            </div>
+        </div>
+    </div>
+    <div class="sponsors" id="sponsors">
+        <h5 class="pre" >-| Previous Sponsors |-</h5>
+        <br>
+        <h5 class="pre">- Gold -</h5>
+        <div class="spo">
+            <a href="https://unstop.com" target="_blank"><img src="img\sponsors\Unstop-Logo-Blue-Medium.png" alt=""></a>
+            <a href="https://gen.xyz" target="_blank"><img src="img\sponsors\xyz-logo-white.png" alt=""></a>
+            <a href="https://digitalspike.co" target="_blank"><img src="img\sponsors\Untitled design.png" alt="" style="border-radius: 0.3cm;"></a>
+            <a href="https://www.learnyst.com/features/sell-online/website-builder" target="_blank"><img src="img\sponsors\Learnst.svg" alt="" style="border-radius: 0.3cm;"></a>
+
+        </div>
+        <h5 class="pre">- Silver -</h5>
+        <div class="spo">
+          <a href="https://finspike.in" target="_blank"><img src="img\sponsors\Untitled design (2).png" alt="" style="border-radius: 0.3cm;"></a>
+          <a href="https://digitalspike.co" target="_blank"><img src="img\sponsors\Untitled design (1).png" alt="" style="border-radius: 0.3cm;"></a>
+          <a href="https://ezye.in/" target="_blank"><img src="img\sponsors\Untitled design (3).png" alt="" style="border-radius: 0.3cm;"></a>
+        </div>
+        <h5 class="pre">- Associate -</h5>
+        <div class="spo">
+            <a href="https://www.syora.in/" target="_blank"><img src="img\sponsors\chikki.png" alt="" style="border-radius: 0.3cm;"></a>
+            <a href="https://sutra-bistro.business.site/" target="_blank"><img src="img\sponsors\sutra.jpeg" alt="" style="border-radius: 0.3cm;"></a>
+            <a href="https://www.drccinemas.in" target="_blank"><img src="img\sponsors\drc.jpeg" alt="" style="border-radius: 0.3cm;"></a>
+        </div>
+    </div>
+    <footer class="text-center p-4 bg-dark text-white" style="font-family: 'Quicksand', sans-serif; background-color:#000000 !important;">
+        <div class="container">
+            <!-- Logo and Text -->
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+                    <h3 class="navbar-brand mb-0">INFOTHON</h3>
+                </div>
+            </div>
+      <!-- Social Media Icons -->
+      <center>
+        <div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <a href="https://instagram.com/infothon.vvce?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="text-white me-4"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.facebook.com/Infothon.2023?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="text-white me-4"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://x.com/InfothonIse?t=0xyudAwBVaUESRyejBsgPA&s=09" target="_blank" class="text-white"><img src="img\x-twitter.svg" alt="" style="width: 2em; height: 2em; margin-right: 14px;"></a>
+            </div><br>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <a href="mailto:infothon.vvce.in" class="text-white"><i class="far fa-envelope me-2"></i>infothon@vvce.ac.in</a>
+            </div>
+      
+            
+        </div>
+      </center>
+      
+            <!-- Useful Links -->
+            <div class="row mt-4">
+                <div class="col">
+                    <h5 class="mb-3" style="font-weight: bolder;">Useful Links</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+                        <li class="list-inline-item"><a href="https://unstop.com/p/infothon-20-vidyavardhaka-college-of-engineering-mysore-850602" class="text-white">Register</a></li>
+                        <li class="list-inline-item"><a href="faqs.html" class="text-white">FAQs</a></li>
+                        <li class="list-inline-item"><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li class="list-inline-item"><a href="front.html" class="text-white">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="row mt-3">
+                <div class="col">
+                    <p class="mb-0">Copyright © INFOTHON 3.0</p>
+                </div>
+            </div>
+        </div>
+      </footer>
+</body>
+</html>

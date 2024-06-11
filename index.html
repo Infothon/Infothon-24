@@ -1,0 +1,527 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+    <meta name="google-site-verification" content="yN7LhZNXZdLxHOfnz4OOciqeLFhet3MkZaojxd3NdYU" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="INFOTHON 2024">
+    <meta name="description" content="Welcome to Infothon 2024, the ultimate offline hackathon hosted by the Information Science and Engineering Department of VVCE Mysore! Infothon 2024 is an exhilarating 24-hour coding extravaganza that brings together passionate innovators, programmers, and problem solvers from all walks of life. Held at the prestigious VVCE campus in Mysore, this hackathon is designed to ignite creativity, foster collaboration, and push the boundaries of technological innovation. Join us at Infothon 2024, where creativity, collaboration, and coding excellence come together to shape the future. Get ready to embark on an unforgettable hackathon experience that will challenge, inspire, and empower you to create something extraordinary. Let's code for a brighter tomorrow! ">
+    <meta name="author" content="INFOTHON">
+    <meta name="keywords" content="INFOTHON 2024">
+    <title> INFOTHON 3.0 </title>
+    <link rel="icon" href="img\logo.png" type="image/icon type">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="./style1.css">
+
+</head>
+  <style>
+       .body{
+      font-family: 'Tourney', cursive;
+      
+    }
+    .navbar-brand {
+      font-family: 'Tourney', cursive;
+      color: white !important;
+      font-size: 1cm;
+      justify-content: center;
+    }
+
+    #navbarNavDropdown {
+      font-family: 'Saira', sans-serif;
+      justify-content: right;
+      margin-right: 0.5cm;
+    }
+    .lo{
+      font-family: 'Audiowide', cursive;
+      color: rgb(255, 255, 255);
+      font-size: 1.25cm;
+      justify-content: center;
+      text-align: center;
+    }
+    .navbar {
+    z-index: 10001; /* Set a higher z-index than the cursor container */
+    }
+
+    .navbar-toggler {
+    z-index: 10002;
+    background-color:#e080f5;
+  }
+  /* Add these styles for the cursor effect */
+  .cursor-container {
+        margin-top: 1%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    pointer-events: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 20px !important;
+    border-radius: 20px;
+}
+
+.cursor-container button {
+    pointer-events: auto; /* Allow button to receive pointer events */
+}
+  .cursor-image {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make the image circular */
+  }
+
+  .text-container {
+    font-family: 'Audiowide', cursive;
+    margin-top: 10px;
+    color: white;
+    font-weight: lighter;
+}
+
+  #cr1 {
+    font-family: 'Audiowide', cursive;
+    color: white;
+    font-size: 1.25cm;
+    justify-content: center;
+  }
+  #cr2 {
+    font-family: 'Saira', sans-serif;
+    color: white;
+  }
+  .spo img {
+            margin: 4% !important;
+            height: auto !important;
+            width: 10% !important;
+        }
+  .clickhere{
+    pointer-events: auto; /* Allow button to receive pointer events */
+    text-decoration: none;
+    color: rgb(0, 176, 199);
+  }
+      @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  .notification-icon {
+    position: fixed;
+    animation: bounce 2s infinite;
+    bottom: 23px;
+    right: 20px;
+    color: white;
+    padding: 1px;
+ 
+    cursor: pointer;
+    z-index: 10003; /* Set a higher z-index to be above cursor-container */
+}
+.sponsors-icon {
+    position: fixed;
+    animation: bounce 2s infinite;
+    bottom: 23px !important;
+    left: 20px !important;
+    color: white;
+    padding: 1px;
+    cursor: pointer;
+    z-index: 10003; /* Set a higher z-index to be above cursor-container */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add gap between sponsor images */
+}
+.sponsors-icon img {
+    height: auto !important;
+    width: 150px !important; /* Adjust width as needed */
+    margin: 4% !important;
+}
+
+.notification-icon img{
+  /*background-color:  #0d0b94;*/
+  background-color:  #18043a;
+  border-radius: 50%;
+}
+
+.notification-icon i {
+  
+    font-size: 20px;
+    margin: 5%;
+}
+/* Add this style for the notification modal */
+body .modal {
+    z-index: 10004;
+    background-color: rgba(0,0,0,0.8) !important; /* Adjust the alpha value as needed */
+    font-family: 'DM Mono', sans-serif;
+    color: white; /* Adjust the text color as needed */
+}
+body .modal-content {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: white;
+  padding: 15px;
+  margin-top: 25%;
+  border-radius: 15px;
+  background-color: rgba(0,0,0, 0.5);
+  box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+  display: none;
+  z-index: 9999;
+}
+
+.toast.show {
+  display: block;
+  animation: fadeInOut 5s forwards; /* Adjust the animation duration as needed */
+}
+
+
+.toast-body {
+  align-items: center;
+  justify-content: space-between; /* Ensure space between text and "X" button */
+  position: relative; /* Set position relative for absolute positioning */
+}
+
+.close-toast {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  position: absolute;
+  top: 0px; /* Adjust top position as needed */
+  right: 5px; /* Adjust right position as needed */
+}
+@media screen and (max-width: 767px) {
+  .cursor-container {
+    margin-top: 5%;
+  }
+  .toast {
+    display: none;
+  }
+  .sp {
+    font-size: 0.3cm;
+  }
+  .sponsors-icon {
+    display: none;
+  }
+}
+
+.sponsors-icon {
+  position: fixed;
+  animation: bounce 2s infinite;
+  bottom: 23px;
+  left: 20px;
+  color: white;
+  text-align: center;
+  font-family: 'Saira', sans-serif;
+  gap: 2px;
+}
+
+.sponsors-icon img {
+  height: auto;
+  width: 150px; /* Adjust width as needed */
+  margin: 4%;
+}
+
+    #problem-statements-icon {
+  position: fixed;
+    animation: bounce 2s infinite;
+    margin-bottom: 110px;
+    right: 20px;
+    /*background-color: #0d0b94;*/
+    background-color: #18043a;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10003;
+}
+  .click{
+    pointer-events: auto; /* Allow button to receive pointer events */
+  }
+#problem-statements-icon i {
+  font-size: 20px;
+  margin: 5%;
+}
+.attention-arrow {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  margin-left: -9px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent; /* Adjust the size of the arrow */
+  border-right: 9px solid transparent; /* Adjust the size of the arrow */
+  border-bottom: 12px solid rgb(255, 255, 255); /* Adjust the color and size of the arrow */
+  border-radius: 50%; /* Add this to make both ends curved */
+  animation: bounce 2s infinite;
+}
+  #timer-container {
+      font-family: 'DM+Mono', sans-serif;
+      text-align: center;
+      font-size: 0.45cm;
+    }
+    .text-line {
+  font-size: 30px;
+  font-family: 'Kode Mono', cursive;
+  font-weight: bolder;
+  font-size: 1cm;
+  color: aliceblue;
+  overflow: hidden; /* Hide overflow to make typing effect */
+  white-space: nowrap; /* Prevent line break */
+  border-right: 1px solid; /* Add vertical cursor effect */
+  animation: typing 3s steps(40) forwards; /* Apply typing animation once */
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 100%; /* End with full width */
+  }
+}
+
+.text-line::after {
+  content: " 3.0";
+  animation: blink-dot 1s infinite; /* Apply blinking animation */
+}
+
+@keyframes blink-dot {
+  50% {
+    opacity: 0; /* Hide dot at 50% of the time */
+  }
+}
+
+
+  </style>
+  <body>
+<!-- partial:index.partial.html -->
+<div id='particles1'></div>
+<div class="cover">
+  	
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+            INFOTHON
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" style="color: white !important;">Home</a>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank" style="color: white !important;">Problem Statements</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="front.html" style="color: white !important;">About us</a>
+                </li>
+ 
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html" style="color: white !important;">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sponsors.html" style="color: white !important;">Sponsors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faqs.html" style="color: white !important;">FAQ</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" style="color: white !important;">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+<br><br><br><br>
+<br><br><br>
+<div class="cursor-container">
+  <p class="text-line" style="font-size: 30px; font-family: 'Kode Mono', cursive; font-weight: bolder; font-size: 1cm; color: aliceblue;">INFOTHON</p>
+  <img src="img/logo.png" class="cursor-image">
+  <div class="text-container">
+        <h5 id="cr2" style="font-size: 0.3cm; font-family: 'Saira'; color:rgb(22, 196, 219);">Passion-fueled Creativity, Purpose-driven Innovation</h5>
+        <h5 id="cr2">National level Hackathon</h5>
+<a target="_blank" href=""><button type="button" class="btn btn-outline-info"
+                    style="width: 8cm; height: 1.5cm; padding-top: 0.1cm; font-family: 'Saira',sans-serif; font-size: larger;">Registration will open Soon</div>
+                  </button></a>
+        <br><h5 id="cr2">Date : 13th - 14th July 2024</h5>
+        <p id="cr2" style="font-weight: bold;">Event flow : will be released soon <a id="cr2" style="font-size: 0.4cm;" target="_blank" href="" class="click"></a></p>
+  </div>
+</div>
+</div>
+<div class="toast" id="domains-toast" style="margin-top: 7%;">
+  <div class="toast-body">
+    <button class="close-toast" onclick="closeToast('domains-toast')">&times;</button>
+
+    <h5 id="cr2" style="font-size: 0.75cm; margin-bottom: 0.5em;">Important Updates</h5>
+
+    <h5 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;"> Date : 13th - 14th July 2024 </h5>
+      <p id="cr2"><strong> Theme will be sent soon</strong><a id="cr2" target="_blank" style="font-size: 0.4cm;" href="" class="click"></a>
+</p>
+    </p>
+
+    <p id="cr2" style="font-size: 0.4cm; margin-bottom: 1em;">
+      <strong id="cr2">Domains: will be released soon</strong>
+      <!-- <p id="cr2">1. Web</p>
+      <p id="cr2">2. AI & ML</p>
+      <p id="cr2">3. IoT</p> -->
+    </p>
+
+    <p style="font-size: 0.4cm;" id="cr2">
+      <p id="cr2" style="font-weight: bold;">Event flow : will be released soon <a id="cr2" style="font-size: 0.4cm;" target="_blank" href="" class="click"></a></p>
+
+  
+  </div>
+</div>
+<div  class="notification-icon" style="position: fixed; bottom: 215px !important; right: 20px; color: white; text-align: center; font-family: 'Saira', sans-serif;">
+  <p style="font-size: 0.3cm; margin: 0; font-weight: bolder;"> Problem </p>
+  <p style="font-size: 0.3cm; margin: 0; font-weight: bolder;">Statements</p>
+</div>
+<a href="https://drive.google.com/drive/folders/1IdZgow-woI83Ba-vAqHYIs9Y_8oD5Qqe?usp=drive_link" target="_blank" id="problem-statements-icon" class="notification-icon">
+  <div class="attention-arrow"></div>
+  <i class="fas fa-book"></i>
+</a>
+<div  class="notification-icon" style="position: fixed; bottom: 100px !important; right: 27px; color: white;text-align: center; font-family: 'Saira', sans-serif;">
+  <p style="font-size: 0.3cm; margin: 0; font-weight: bolder;">Updates</p>
+</div>
+<div id="notification-icon" class="notification-icon">
+  <div class="attention-arrow"></div>
+  <img src="img\not.gif" alt="Notification Icon" style="width: 1.5cm; height: 1.5cm;"></div>
+</div>
+<div class="sponsors-icon" style="position: fixed; bottom: 23px; left: 20px; color: white; text-align: center; font-family: 'Saira', sans-serif; gap: 2px !important;">
+  <p style="font-size: 0.5cm; margin: 0; font-weight: bolder;"> Main </p>
+  <p style="font-size: 0.5cm; margin: 0; font-weight: bolder;">Sponsors</p>
+  <img src="img\sponsors\Unstop-Logo-White-Medium.png" alt="Sponsor 1">
+  <img src="img\sponsors\xyz-logo-white.png" alt="Sponsor 2">
+  <img src="img\sponsors\Untitled design.png" alt="Sponsor 3" style="border-radius: 15px;">
+</div>
+
+
+
+<!-- Notification Modal -->
+<div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="notificationModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="notificationModalLabel">Notification</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <p id="cr2"><strong> Date of Event : 13th : 14th July 2024 </strong>
+</p>
+    </p>
+      <h5 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;">Register will open soon</h5>
+
+    <p id="cr2" style="font-size: 0.4cm; margin-bottom: 1em;">
+      <strong id="cr2">Domains will the updated soon:</strong>
+      <!-- <p id="cr2">1. Web</p>
+      <p id="cr2">2. AI & ML</p>
+      <p id="cr2">3. IoT</p> -->
+    </p>
+    <p style="font-size: 0.4cm;" id="cr2">
+      Event flow : <a id="cr2" style="font-size: 0.4cm;" target="_blank" href="#" class="click">Will be updated soon</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="text-center p-4 bg-dark text-white" style="font-family: 'Saira', sans-serif; background-color:#000000!important;">
+  <div class="container">
+      <!-- Logo and Text -->
+      <div class="row mb-4">
+          <div class="col-md-12">
+              <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+              <h3 class="navbar-brand mb-0">INFOTHON</h3>
+          </div>
+      </div>
+<center>
+  <div>
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+          <a href="https://instagram.com/infothon.vvce?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="text-white me-4"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://www.facebook.com/Infothon.2023?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="text-white me-4"><i class="fab fa-facebook-f fa-2x"></i></a>
+          <a href="https://x.com/InfothonIse?t=0xyudAwBVaUESRyejBsgPA&s=09" target="_blank" class="text-white"><img src="img\x-twitter.svg" alt="" style="width: 2em; height: 2em; margin-right: 14px;"></a>
+      </div><br>
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+          <a href="mailto:infothon.vvce.in" class="text-white"><i class="far fa-envelope me-2"></i>infothon@vvce.ac.in</a>
+      </div>
+  </div>
+</center>
+
+      <div class="row mt-4">
+          <div class="col">
+              <h5 class="mb-3" style="font-weight: bolder;">Useful Links</h5>
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+                  <li class="list-inline-item"><a href="https://unstop.com/p/infothon-20-vidyavardhaka-college-of-engineering-mysore-850602" class="text-white">Register</a></li>
+                  <li class="list-inline-item"><a href="faqs.html" class="text-white">FAQs</a></li>
+                  <li class="list-inline-item"><a href="contact.html" class="text-white">Contact Us</a></li>
+                  <li class="list-inline-item"><a href="front.html" class="text-white">About Us</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="row mt-3">
+          <div class="col">
+              <p class="mb-0">Copyright © INFOTHON 3.0</p>
+          </div>
+      </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js' defer></script>
+<script src="script1.js" defer></script>
+</body>
+</html>
+<script>
+  <!-- Add this script in the head section or before the closing body tag -->
+  // JavaScript function to close the toast
+  function closeToast(toastId) {
+    document.getElementById(toastId).classList.remove('show');
+  }
+
+  // Function to show the toast
+  function showToast(toastId, delay) {
+    setTimeout(function() {
+      document.getElementById(toastId).classList.add('show');
+    }, delay);
+  }
+
+  // Show toasts after a delay
+  if (window.innerWidth > 767) {
+      showToast('notification-toast', 4000); // Problem statements
+      showToast('domains-toast', 2000); // Domains
+      showToast('event-flow-toast', 6000); // Event flow
+    }
+  $(document).ready(function () {
+      // Show modal when the notification icon is clicked
+      $("#notification-icon").click(function () {
+          $("#notificationModal").modal("show");
+      });
+  });
+</script>
+  
