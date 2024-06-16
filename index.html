@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -14,7 +11,6 @@
     <title> INFOTHON 3.0 </title>
     <link rel="icon" href="img\logo.png" type="image/icon type">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Tourney&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
@@ -22,85 +18,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="./style1.css">
+  
 
 </head>
   <style>
-       .body{
-      font-family: 'Tourney', cursive;
-      
-    }
-    .navbar-brand {
-      font-family: 'Tourney', cursive;
-      color: white !important;
-      font-size: 1cm;
-      justify-content: center;
-    }
-
-    #navbarNavDropdown {
-      font-family: 'Saira', sans-serif;
-      justify-content: right;
-      margin-right: 0.5cm;
-    }
-    .lo{
-      font-family: 'Audiowide', cursive;
-      color: rgb(255, 255, 255);
-      font-size: 1.25cm;
-      justify-content: center;
-      text-align: center;
-    }
-    .navbar {
-    z-index: 10001; /* Set a higher z-index than the cursor container */
-    }
-
-    .navbar-toggler {
-    z-index: 10002;
-    background-color:rgb(255, 255, 255);
-  }
-  /* Add these styles for the cursor effect */
-  .cursor-container {
-        margin-top: 1%;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10000;
-    pointer-events: none;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.35);
-    padding: 20px !important;
-    border-radius: 20px;
-}
-
-.cursor-container button {
-    pointer-events: auto; /* Allow button to receive pointer events */
-}
-  .cursor-image {
-    width: 300px; /* Adjust the width as needed */
-    height: 300px; /* Adjust the height as needed */
-    border-radius: 50%; /* Make the image circular */
-  }
-
-  .text-container {
-    font-family: 'Audiowide', cursive;
-    margin-top: 10px;
-    color: white;
-    font-weight: lighter;
-}
-
-  #cr1 {
-    font-family: 'Audiowide', cursive;
-    color: white;
-    font-size: 1.25cm;
-    justify-content: center;
-  }
-  #cr2 {
-    font-family: 'Saira', sans-serif;
-    color: white;
-  }
   .spo img {
             margin: 4% !important;
             height: auto !important;
@@ -150,6 +74,11 @@
     height: auto !important;
     width: 150px !important; /* Adjust width as needed */
     margin: 4% !important;
+}
+.sponsor-text{
+  font-size: 0.5cm; 
+  margin: 0 !important; 
+  font-weight: bolder;
 }
 
 .notification-icon img{
@@ -221,25 +150,19 @@ body .modal-content {
     font-size: 0.3cm;
   }
   .sponsors-icon {
-    display: none;
-  }
+    bottom: 35px !important;
+    left: 20px !important;
+    padding: 1px;
+    display: flex;
 }
-
-.sponsors-icon {
-  position: fixed;
-  animation: bounce 2s infinite;
-  bottom: 23px;
-  left: 20px;
-  color: white;
-  text-align: center;
-  font-family: 'Saira', sans-serif;
-  gap: 2px;
-}
-
 .sponsors-icon img {
-  height: auto;
-  width: 150px; /* Adjust width as needed */
-  margin: 4%;
+    height: auto !important;
+    width: 50px !important; /* Adjust width as needed */
+    margin: 2.5% !important;
+}
+.sponsor-text{
+  font-size: 0.3cm !important;
+}
 }
 
     #problem-statements-icon {
@@ -292,25 +215,7 @@ body .modal-content {
   animation: typing 3s steps(40) forwards; /* Apply typing animation once */
 }
 
-@keyframes typing {
-  from {
-    width: 0; /* Start with no width */
-  }
-  to {
-    width: 100%; /* End with full width */
-  }
-}
 
-.text-line::after {
-  content: " 3.0";
-  animation: blink-dot 1s infinite; /* Apply blinking animation */
-}
-
-@keyframes blink-dot {
-  50% {
-    opacity: 0; /* Hide dot at 50% of the time */
-  }
-}
 
 
   </style>
@@ -318,7 +223,6 @@ body .modal-content {
 <!-- partial:index.partial.html -->
 <div id='particles1'></div>
 <div class="cover">
-  	
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgba(0, 0, 0, 0.5) !important;">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -401,7 +305,7 @@ body .modal-content {
   <p style="font-size: 0.3cm; margin: 0; font-weight: bolder;"> Problem </p>
   <p style="font-size: 0.3cm; margin: 0; font-weight: bolder;">Statements</p>
 </div>
-<a href="#" target="_blank" id="problem-statements-icon" class="notification-icon">
+<a href="https://drive.google.com/drive/folders/1IdZgow-woI83Ba-vAqHYIs9Y_8oD5Qqe?usp=drive_link" target="_blank" id="problem-statements-icon" class="notification-icon">
   <div class="attention-arrow"></div>
   <i class="fas fa-book"></i>
 </a>
@@ -412,9 +316,11 @@ body .modal-content {
   <div class="attention-arrow"></div>
   <img src="img\not.gif" alt="Notification Icon" style="width: 1.5cm; height: 1.5cm;"></div>
 </div>
-<div class="sponsors-icon" style="position: fixed; bottom: 23px; left: 20px; color: white; text-align: center; font-family: 'Saira', sans-serif; gap: 2px !important;">
-  <p style="font-size: 0.5cm; margin: 0; font-weight: bolder;"> Main </p>
-  <p style="font-size: 0.5cm; margin: 0; font-weight: bolder;">Sponsors</p>
+<div class="sponsors-icon" style="position: fixed; bottom: 23px; left: 20px; color: white; text-align: center; font-family: 'Saira', sans-serif;">
+  
+  <p class="sponsor-text"> Main </p>
+  <p class="sponsor-text">Sponsors </p>
+
   <img src="img\sponsors\Unstop-Logo-White-Medium.png" alt="Sponsor 1">
   <img src="img\sponsors\xyz-logo-white.png" alt="Sponsor 2">
   <img src="img\sponsors\Untitled design.png" alt="Sponsor 3" style="border-radius: 15px;">
