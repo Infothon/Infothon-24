@@ -25,6 +25,16 @@
 
 </head>
   <style>
+    .navbar-brand {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+    .vl {
+    border-left: 1px solid white; /* Vertical line style */
+    height: 40px; /* Adjust height as needed */
+    margin-left: 10px; /* Adjust margin to separate the logo and text */
+    padding-left: 10px;
+}
   .spo img {
             margin: 4% !important;
             height: auto !important;
@@ -82,7 +92,7 @@
 }
 
 .notification-icon img{
-  /*background-color:  #0d0b94;*/
+  /background-color:  #0d0b94;/
   background-color:  #18043a;
   border-radius: 50%;
 }
@@ -157,11 +167,11 @@ body .modal-content {
 }
 .sponsors-icon img {
     height: auto !important;
-    width: 30px !important; /* Adjust width as needed */
+    width: 50px !important; /* Adjust width as needed */
     margin: 2.5% !important;
 }
 .sponsor-text{
-  font-size: 0.2cm !important;
+  font-size: 0.3cm !important;
 }
 }
 
@@ -170,7 +180,7 @@ body .modal-content {
     animation: bounce 2s infinite;
     margin-bottom: 110px;
     right: 20px;
-    /*background-color: #0d0b94;*/
+    /background-color: #0d0b94;/
     background-color: #18043a;
     color: white;
     padding: 20px;
@@ -225,42 +235,48 @@ body .modal-content {
 <div class="cover">
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgba(0, 0, 0, 0.5) !important;">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
-            INFOTHON
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html" style="color: white !important;">Home</a>
-                </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#" target="_blank" style="color: white !important;">Problem Statements</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="front.html" style="color: white !important;">About us</a>
-                </li>
- 
-                <li class="nav-item">
-                  <a class="nav-link" href="gallery.html" style="color: white !important;">Gallery</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="sponsors.html" style="color: white !important;">Sponsors</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="faqs.html" style="color: white !important;">FAQ</a>
-              </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html" style="color: white !important;">Contact us</a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/VVCE.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+        <img src="img/ISE.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+       
+        
+        <div class="vl"></div> <!-- Vertical line -->
+        <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+        <span class="infoton-text">INFOTHON</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <!-- Your navbar items -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: white !important;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank" style="color: white !important;">Problem Statements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="front.html" style="color: white !important;">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html" style="color: white !important;">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sponsors.html" style="color: white !important;">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faqs.html" style="color: white !important;">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="color: white !important;">Contact us</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
+  
 <br><br><br><br>
 <br><br><br>
 <div class="cursor-container">
@@ -284,12 +300,9 @@ body .modal-content {
     <h5 id="cr2" style="font-size: 0.75cm; margin-bottom: 0.5em;">Important Updates</h5>
 
     <h5 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;"> Date : 13th - 14th July 2024 </h5>
-        <p id="cr2"><strong> Themes :</strong><a id="cr2" target="_blank" style="font-size: 0.4cm;" href="" class="click"></a>
+      <p id="cr2"><strong> Theme will be sent soon</strong><a id="cr2" target="_blank" style="font-size: 0.4cm;" href="" class="click"></a>
 </p>
-<h6 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;"> 1. Social Innovation </h6>
-  <h7 id="cr2" style="font-size: 0.4cm; margin-bottom: 0.5em;"> 2. Logistics & Management </h7>
     </p>
-
 
     <p id="cr2" style="font-size: 0.4cm; margin-bottom: 1em;">
       <strong id="cr2">Domains: will be released soon</strong>
@@ -308,7 +321,7 @@ body .modal-content {
   <p style="font-size: 0.3cm; margin: 0; font-weight: bolder;"> Problem </p>
   <p style="font-size: 0.3cm; margin: 0; font-weight: bolder;">Statements</p>
 </div>
-<a href="#" target="_blank" id="problem-statements-icon" class="notification-icon">
+<a href="https://drive.google.com/drive/folders/1IdZgow-woI83Ba-vAqHYIs9Y_8oD5Qqe?usp=drive_link" target="_blank" id="problem-statements-icon" class="notification-icon">
   <div class="attention-arrow"></div>
   <i class="fas fa-book"></i>
 </a>
@@ -433,4 +446,3 @@ body .modal-content {
       });
   });
 </script>
-  
