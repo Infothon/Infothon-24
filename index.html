@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Tourney&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap" rel="stylesheet">
@@ -112,7 +113,12 @@ body .modal {
 body .modal-content {
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
-
+#timer-container {
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+    font-size: 0.45cm;
+    color: aliceblue;
+  }
 .toast {
   position: fixed;
   top: 20px;
@@ -295,8 +301,9 @@ body .modal-content {
                     style="width: 8cm; height: 1.5cm; padding-top: 0.1cm; font-family: 'Saira',sans-serif; font-size: larger;">Registration will open Soon</div>
                   </button></a>
         <br><h5 id="cr2">Date : 13th - 14th July 2024</h5>
-        <p id="cr2" style="font-weight: bold;">Event flow : will be released soon <a id="cr2" style="font-size: 0.4cm;" target="_blank" href="" class="click"></a></p>
-  </div>
+        <div id="timer-container">
+          <p id="countdown"></p>
+        </div>
 </div>
 </div>
 <div class="toast" id="domains-toast" style="margin-top: 7%;">
@@ -452,4 +459,33 @@ body .modal-content {
           $("#notificationModal").modal("show");
       });
   });
+
+  var countDownDate = new Date("Jul 14, 2024 09:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="countdown"
+      document.getElementById("countdown").innerHTML = days + " days : " + hours + " hrs : "
+      + minutes + " min : " + seconds + " sec";
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+
 </script>
