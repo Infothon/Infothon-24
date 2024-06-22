@@ -32,7 +32,16 @@
   .navbar {
   z-index: 10001; /* Set a higher z-index than the cursor container */
   }
-
+    .navbar-brand {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+    .vl {
+    border-left: 1px solid white; /* Vertical line style */
+    height: 40px; /* Adjust height as needed */
+    margin-left: 10px; /* Adjust margin to separate the logo and text */
+    padding-left: 10px;
+}
   .navbar-toggler {
   z-index: 10002;
   background-color:rgb(255, 255, 255);
