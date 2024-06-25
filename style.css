@@ -1,108 +1,103 @@
 .body{
-    font-family: 'Tourney', cursive;
-    
-  }
-  body {
-    /* background-color:#160642;  */
-    background-color:#376e8ffa;
-     padding: 0;
-     margin: 0;
-   }
-  .navbar-brand {
-    font-family: 'Tourney', cursive;
-    color: white !important;
-    font-size: 1cm !important;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #navbarNavDropdown {
-    font-family: 'Saira', sans-serif;
-    justify-content: right;
-    margin-right: 0.5cm;
-  }
-
-  .lo{
-    font-family: 'Audiowide', cursive;
-    color: rgb(255, 255, 255);
-    font-size: 1.25cm;
-    justify-content: center;
-    text-align: center;
-  }
-  .navbar {
-  z-index: 10001; /* Set a higher z-index than the cursor container */
-  }
-    .navbar-brand {
-  display: flex;
-  align-items: center; /* Align items vertically */
+  font-family: 'Tourney', cursive;
+  
 }
-    .vl {
-    border-left: 1px solid white !important; /* Vertical line style */
-    height: 40px  !important; /* Adjust height as needed */
-    margin-left: 10px  !important; /* Adjust margin to separate the logo and text */
-    padding-left: 10px  !important;
+body {
+  /* background-color:#160642;  */
+  background-color:#376e8ffa !important;
+   padding: 0;
+   margin: 0;
+ }
+.navbar-brand {
+  font-family: 'Tourney', cursive;
+  color: white !important;
+  font-size: 1cm !important;
+  justify-content: center;
+  align-items: center;
 }
-  .navbar-toggler {
-  z-index: 10002;
-  background-color:rgb(255, 255, 255);
+
+#navbarNavDropdown {
+  font-family: 'Saira', sans-serif;
+  justify-content: right;
+  margin-right: 0.5cm;
+}
+
+.lo{
+  font-family: 'Audiowide', cursive;
+  color: rgb(255, 255, 255);
+  font-size: 1.25cm;
+  justify-content: center;
+  text-align: center;
+}
+.navbar {
+z-index: 10001; /* Set a higher z-index than the cursor container */
+}
+
+.navbar-toggler {
+z-index: 10002;
+background-color:rgb(255, 255, 255);
 }
 /* Add these styles for the cursor effect */
 .cursor-container {
-      margin-top: 1%;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10000;
-  pointer-events: none;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.35);
-  padding: 20px !important;
-  border-radius: 20px;
+    margin-top: 1%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    pointer-events: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 20px !important;
+    border-radius: 20px;
 }
+.text-center{
+  z-index: 10002 !important;
+  position: relative  ;
 
+}
 .cursor-container button {
-  pointer-events: auto; /* Allow button to receive pointer events */
+pointer-events: auto; /* Allow button to receive pointer events */
 }
 .cursor-image {
-  width: 300px; /* Adjust the width as needed */
-  height: 300px; /* Adjust the height as needed */
-  border-radius: 50%; /* Make the image circular */
+width: 300px; /* Adjust the width as needed */
+height: 300px; /* Adjust the height as needed */
+border-radius: 50%; /* Make the image circular */
 }
 
 .text-container {
-  font-family: 'Audiowide', cursive;
-  margin-top: 10px;
-  color: white;
-  font-weight: lighter;
+font-family: 'Audiowide', cursive;
+margin-top: 10px;
+color: white;
+font-weight: lighter;
 }
 
 #cr1 {
-  font-family: 'Audiowide', cursive;
-  color: white;
-  font-size: 1.25cm;
-  justify-content: center;
+font-family: 'Audiowide', cursive;
+color: white;
+font-size: 1.25cm;
+justify-content: center;
 }
 #cr2 {
-  font-family: 'Saira', sans-serif;
-  color: white;
+font-family: 'Saira', sans-serif;
+color: white;
 }
 @keyframes typing {
-    from {
-      width: 0; /* Start with no width */
-    }
-    to {
-      width: 100%; /* End with full width */
-    }
+  from {
+    width: 0; /* Start with no width */
   }
-  
-  .text-line::after {
-    content: " 3.0";
-    animation: blink-dot 1s infinite; /* Apply blinking animation */
+  to {
+    width: 100%; /* End with full width */
   }
-  
-  @keyframes blink-dot {
-    50% {
-      opacity: 0; /* Hide dot at 50% of the time */
-    }
+}
+
+.text-line::after {
+  content: " 3.0";
+  animation: blink-dot 1s infinite; /* Apply blinking animation */
+}
+
+@keyframes blink-dot {
+  50% {
+    opacity: 0; /* Hide dot at 50% of the time */
   }
+}
