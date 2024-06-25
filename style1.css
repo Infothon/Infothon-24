@@ -26,7 +26,7 @@
 	/*background:#000000;*/
 	background:#376e8ffa;
 	height: 100%;
-	position: absolute; /* Change to absolute positioning */
+	position: fixed;
 	top: 0; /* Position particles container at the top */
 	width: 100%;
   }
