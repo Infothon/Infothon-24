@@ -102,13 +102,14 @@
 }
 
 .notification-icon img{
+  z-index: 10006 !important;
 
   background-color:  #18043a;
   border-radius: 50%;
 }
 
 .notification-icon i {
-  
+  z-index: 10006;
     font-size: 20px;
     margin: 5%;
 }
@@ -207,7 +208,7 @@ body .modal-content {
     padding: 20px;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 10003;
+    z-index: 10006;
 }
   .click{
     pointer-events: auto; /* Allow button to receive pointer events */
@@ -245,8 +246,27 @@ body .modal-content {
   border-right: 1px solid; /* Add vertical cursor effect */
   animation: typing 3s steps(40) forwards; /* Apply typing animation once */
 }
+#sponsorship-section{
+     padding: 20px;
+     display: flex !important;
+}
+#sponsorship{
+  margin-top: 5px;
+  z-index: 10006;
+  position: relative;
+  pointer-events: none;
 
-
+}
+#sponsorship-section{
+  z-index: 10006;
+  position: relative;
+  align-items:center;
+  justify-content: center;
+}
+#sponsorship-section img{
+  height: 50px !important;
+  margin: 10px;
+}
 
 
   </style>
@@ -392,6 +412,16 @@ body .modal-content {
       </div>
     </div>
   </div>
+</div>
+<div id="sponsorship">
+<center><h1 id="cr2">Previous Year Sponsors</h1></center>
+<div id="sponsorship-section" ><center>
+    <img src="img\sponsors\Unstop-Logo-White-Medium.png" alt="Sponsor 1">
+    <img src="img\sponsors\xyz-logo-white.png" alt="Sponsor 2">
+    <img src="img\sponsors\Untitled design.png" alt="Sponsor 3" style="border-radius: 0.5cm;">
+    <br><br>
+  </center>
+</div>
 </div>
 <footer class="text-center p-4 bg-dark text-white" style="font-family: 'Saira', sans-serif; background-color:#000000!important;">
   <div class="container">
