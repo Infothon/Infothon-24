@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infothon 3.0</title>
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Add Quicksand and Abril Fatface fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .nav-link{
+            color: #ffffff;
+        }
+        .nav-item :hover{
+            color: rgb(14, 13, 53);
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        /* Custom styles */
+        .card {
+            background-color: rgba(0, 0, 0, 0.4);
+            height: 6.5cm; /* Equals 5.5 centimeters */
+            font-family: 'Kode Mono', sans-serif;
+            color: white;
+        }
+        .card :hover{
+            border-color: #00cccc;
+            
+        }
+
+        .card-title {
+            font-family: 'Black Ops One', cursive;
+            color: white;
+        }
+
+        .card-footer button {
+            background-color: #53b4b4; /* Cyan */
+            color: #ffffff; /* White */
+            border: none;
+            font-family: 'Kode Mono', sans-serif;
+        }
+
+        .card-footer button:hover {
+            background-color: #00cccc; /* Darker cyan on hover */
+        }
+        .modal-content {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff; /* White */
+
+        }
+        .option-menu {
+            margin-bottom: 20px;
+            margin-top: 100px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px; /* Adjust the value as needed */
+            padding: 20px; /* Optional: Adds some padding inside the container */
+        }
+
+        .option-menu button {
+            background-color: #53b4b4; /* Cyan */
+            color: #ffffff; /* White */
+            border: none;
+            margin-right: 10px;
+            padding: 10px 20px;
+            font-family: 'Kode Mono', sans-serif;
+            border-radius: 5px; /* Optional: Adds a border radius to buttons */
+        }
+
+        .option-menu button:hover {
+            background-color: #00cccc; /* Darker cyan on hover */
+        }
+        .theme{
+            text-align: center;
+            margin: 20px;
+            color: #ffffff; /* White */
+            font-family: 'Black Ops One', sans-serif;
+            font-size: 50px;
+        }
+        @media screen and (max-width: 767px) {
+            .theme-button{
+                font-size: 12px;
+            }
+            .theme{
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="img/VVCE.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+            <img src="img/ISE.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+            <div class="vl"></div> 
+            <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+            <span class="infoton-text">INFOTHON</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <!-- Your navbar items -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="color: white !important;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white !important;">Problem Statements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="front.html" style="color: white !important;">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html" style="color: white !important;">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sponsors.html" style="color: white !important;">Sponsors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faqs.html" style="color: white !important;">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="color: white !important;">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class="container">
+<br><br><br><br><br>
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link theme-button" href="problemstatements.html">Theme 1 : Social Innovation</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active theme-button" aria-current="page" href="problemstatements1.html">Theme 2 : logistics and Management</a>
+    
+  </ul>
+    <h2 class="theme">Theme 2 : logistics and Management</h2>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Card 1: Chat Bot -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">1. Chat Bot</h5>
+                    <p class="card-text">Develop a chat bot designed to enhance the user experience for both producers and customers.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 1: Chat Bot Details -->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal1Label">Chat Bot</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>    Objective: Develop a chat bot designed to enhance the user experience for both producers and customers. <br>
+                        </p><br><p>Summary: This chat bot should use intelligent features such as avatars or voice-based systems to provide a more engaging and effective interface. The goal is to streamline interactions, address queries, and offer recommendations, ultimately contributing to improved business outcomes.
+</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Demand Forecasting and Comparison -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">2. Demand Forecasting and Comparison</h5>
+                    <p class="card-text">Create a system that predicts future product demand and compares current prices to offer optimal suggestions to customers.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2: Demand Forecasting and Comparison Details -->
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal2Label">Demand Forecasting and Comparison</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Objective:Create a system that predicts future product demand and compares current prices to offer optimal suggestions to customers.<br>
+                        </p><br><p> Summary: The system should utilize advanced data analysis and forecasting techniques to anticipate market trends, helping businesses plan inventory and pricing strategies more effectively. This will enable better decision-making and customer satisfaction through informed product recommendations.
+                         </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Transportation and Route Planning -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">3. Transportation and Route Planning</h5>
+                    <p class="card-text">Optimize transportation routes and logistics to minimize costs and delivery times.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3: Transportation and Route Planning Details -->
+        <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal3Label">Transportation and Route Planning</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>   Objective:Optimize transportation routes and logistics to minimize costs and delivery times.<br>
+                        </p><br><p>Details: Implement solutions using real-time traffic data or simulated annealing algorithms to enhance route efficiency. This will reduce operational costs and improve delivery speed, ensuring timely and cost-effective transportation of goods.
+                         </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4: Digital Tipping for Wait Staff -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">4. Digital Tipping for Wait Staff</h5>
+                    <p class="card-text">Develop a comprehensive online tipping solution.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4: Digital Tipping for Wait Staff Details -->
+        <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal4Label">Digital Tipping for Wait Staff</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Objective:Develop a comprehensive online tipping solution.<br>
+                        </p><br><p> Summary: The solution should seamlessly integrate with existing digital platforms to allow easy and secure tipping for wait staff. This will modernize the tipping process, improve user convenience, and ensure fair and efficient distribution of tips.
+                         </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5: Vehicle Booking Systems -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">5. Vehicle Booking Systems</h5>
+                    <p class="card-text">Develop an advanced vehicle booking system.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 5: Vehicle Booking Systems Details -->
+        <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal5Label">Vehicle Booking Systems</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>   Objective:Develop an advanced vehicle booking system.<br>
+                        </p><br><p>Summary: This system should feature real-time availability tracking, efficient resource management, and cost control. It aims to streamline the booking process, enhance fleet utilization, and provide accurate tracking for users.
+                         </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6: Patient Medicine Distribution and Management -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">6. Patient Medicine Distribution and Management</h5>
+                    <p class="card-text">Enhance the management of patient and medicine data.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal6">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 6: Patient Medicine Distribution and Management Details -->
+        <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal6Label">Patient Medicine Distribution and Management</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>   Objective:Enhance the management of patient and medicine data.<br>
+                        </p><br><p>Summary: Focus on improving the quality of care, treatment scheduling, and real-time management of diagnoses and medication. This system should support better coordination of healthcare services, leading to improved patient outcomes and operational efficiency in healthcare facilities.
+                         </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 7: Assisting Farmers with Meteorological Data -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">7. Assisting Farmers with Meteorological Data</h5>
+                    <p class="card-text">Create a solution that helps farmers by providing timely updates and warnings about weather conditions.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal7">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 7: Assisting Farmers with Meteorological Data Details -->
+        <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal7Label">Assisting Farmers with Meteorological Data</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Objective: To create a solution that helps farmers by providing timely updates and warnings about weather conditions that may affect them.<br>
+                        </p><br><p> Summary: Updating and warning the farmers about the weather in the coming days can help them stay alert. The product should be user-friendly and accessible to the farmers.
+                            </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 8: AI-Assisted Distracted Driver Detection System -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">8. AI-Assisted Distracted Driver Detection System</h5>
+                    <p class="card-text">Design and implement a system that uses AI algorithms to detect distracted driving behaviors in real-time.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal8">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 8: AI-Assisted Distracted Driver Detection System Details -->
+        <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal8Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal8Label">AI-Assisted Distracted Driver Detection System</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Objective: To design and implement a system that uses AI algorithms to detect distracted driving behaviours in real-time.<br>
+                        </p><br><p>  Summary: The system should analyse cues such as facial expressions, eye movements, head orientation, and vehicle dynamics to identify signs of distraction, drowsiness, or inattention on the part of the driver
+                            
+                            </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 9: Decentralized File Storage -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">9. Decentralized File Storage</h5>
+                    <p class="card-text">Build a web3 application that utilizes decentralized storage systems like IPFS or Filecoin for secure and censorship-resistant file storage and sharing.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal9">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 9: Decentralized File Storage Details -->
+        <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modal9Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal9Label">Decentralized File Storage</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Build a web3 application that utilises decentralised storage systems like IPFS or Filecoin to enable secure and censorship-resistant file storage and sharing.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 10: Blockchain-based Digital Identity Verification -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">10. Blockchain-based Digital Identity Verification</h5>
+                    <p class="card-text">Develop a blockchain solution for secure and efficient identity verification, reducing reliance on traditional methods.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal10">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 10: Blockchain-based Digital Identity Verification Details -->
+        <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="modal10Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal10Label">Blockchain-based Digital Identity Verification</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Develop a blockchain solution that allows individuals or organizations to verify identities securely and efficiently, reducing reliance on traditional identity verification methods.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 10: Blockchain-based Digital Identity Verification -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">11.Open Source</h5>
+                    <p class="card-text">Develop projects that enhance customer satisfaction and drive business growth.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal11">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 10: Blockchain-based Digital Identity Verification Details -->
+        <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modal11Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal11Label">Open Source</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Objective:Develop projects that enhance customer satisfaction and drive business growth.<br>
+                        </p><br><p> Summary: These projects should be open source, fostering community collaboration and innovation. They should aim to provide practical solutions that address customer needs and contribute to overall business development.<br>
+                         
+                         Note: The following statements should incorporate one or more of the themes mentioned above
+                         </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center p-4 bg-dark text-white" style="font-family: 'Quicksand', sans-serif; background-color: #000000 !important;">
+  
+    <div class="container">
+        <!-- Logo and Text -->
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+                <h3 class="navbar-brand mb-0">INFOTHON</h3>
+            </div>
+        </div>
+  <!-- Social Media Icons -->
+  <center>
+    <div>
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <a href="https://instagram.com/infothon.vvce?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="text-white me-4"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="contact.html" target="_blank" class="text-white me-4"><i class="fa fa-phone fa-2x"></i></a>
+            <a href="https://x.com/InfothonIse?t=0xyudAwBVaUESRyejBsgPA&s=09" target="_blank" class="text-white"><img src="img\x-twitter.svg" alt="" style="width: 2em; height: 2em; margin-right: 14px;"></a>
+        </div><br>
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <a href="mailto:infothon.vvce.in" class="text-white"><i class="far fa-envelope me-2"></i>infothon@vvce.ac.in</a>
+        </div>
+  
+        
+    </div>
+  </center>
+  
+        <!-- Useful Links -->
+        <div class="row mt-4">
+            <div class="col">
+                <h5 class="mb-3" style="font-weight: bolder;">Useful Links</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="list-inline-item"><a href="https://unstop.com/o/TRNOYpZ?lb=oDUR4wu8" class="text-white">Register</a></li>
+                    <li class="list-inline-item"><a href="faqs.html" class="text-white">FAQs</a></li>
+                    <li class="list-inline-item"><a href="contact.html" class="text-white">Contact Us</a></li>
+                    <li class="list-inline-item"><a href="front.html" class="text-white">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="row mt-3">
+            <div class="col">
+                <p class="mb-0">Copyright © INFOTHON 3.0</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
