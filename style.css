@@ -2,6 +2,12 @@
   font-family: 'Tourney', cursive;
   
 }
+ .vl {
+    border-left: 1px solid white; /* Vertical line style */
+    height: 40px; /* Adjust height as needed */
+    margin-left: 10px; /* Adjust margin to separate the logo and text */
+    padding-left: 10px;
+}
 body {
   /* background-color:#160642;  */
   background-color:#376e8ffa !important;
