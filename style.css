@@ -107,3 +107,12 @@ color: white;
     opacity: 0; /* Hide dot at 50% of the time */
   }
 }
+@media screen and (max-width: 767px) {
+.infoton-text{
+  display: none;
+}
+.text-line{
+  font-family: 'Tourney' !important;
+  font-weight: normal !important;
+}
+}
