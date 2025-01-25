@@ -98,7 +98,7 @@ color: white;
 }
 
 .text-line::after {
-  content: " 3.0";
+  content: " 4.0";
   animation: blink-dot 1s infinite; /* Apply blinking animation */
 }
 
